@@ -1,2 +1,2 @@
 # CheatSheet
-JavaScript Cheat See
+JavaScript Cheat sheet
