@@ -236,6 +236,36 @@ let flatArr = nestedArr.flat(Infinity);
 let uniqueArr = [...new Set([1, 2, 2, 3, 3, 4])]; 
 // [1, 2, 3, 4]
 
+
+
+// ==============================
+// Iterate over an array
+// ==============================
+// Using a for loop
+for (let i = 0; i < exampleArr.length; i++) {
+    console.log(exampleArr[i]);
+  }
+  // Logs: 1, 2, 3
+  
+  // Using a for...of loop
+  for (let num of exampleArr) {
+    console.log(num);
+  }
+  // Logs: 1, 2, 3
+  
+  // Using forEach
+  exampleArr.forEach(num => console.log(num));
+  // Logs: 1, 2, 3
+  
+  // Using map (to create a new array while iterating)
+  let doubledArr = exampleArr.map(num => num * 2);
+  // [2, 4, 6]
+  
+  // Using reduce (to accumulate values while iterating)
+  let sum = exampleArr.reduce((acc, num) => acc + num, 0);
+  // 6
+
+  
 // Sort and reverse
 exampleArr.reverse(); // [1, 2, 3]
 // ==============================
